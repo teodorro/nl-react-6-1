@@ -1,0 +1,127 @@
+.adding-toolbar-component {
+  padding: 1em 0em;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.clocks-component {
+  border: 1px solid grey;
+  border-radius: 1em;
+  padding: 0em 1em 3em 0em;
+  min-height: 170px;
+  min-width: 200px;
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.toolbar-form {
+  border: 1px solid grey;
+  border-radius: 1em;
+  padding: 1em 0em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name-input {
+  height: 2em;
+  margin: 0.5em;
+}
+
+.timezone-input {
+  height: 2em;
+  margin: 0.5em;
+  min-width: 120px;
+}
+
+.button-submit {
+  background: darkred;
+}
+.button-submit:focus {
+  outline: none;
+}
+
+.clocks-list {
+  overflow: auto;
+  display: flex;
+  align-items: start;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.item {
+  width: 100px;
+  margin: 0em 1em;
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.item-remove {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border-radius: 1em;
+  font-size: 12px;
+  background: dimgray;
+  border: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -0.0em -0.2em 0 0;
+}
+.item-remove:focus {
+  outline: none;
+}
+
+.item-clock {
+  width: 100px;
+  height: 100px;
+  max-height: 100px;
+  background: lightgrey;
+  box-shadow: 0em 0.2em 0.5em 0.2em dimgrey;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin: 1em;
+}
+
+.clock-face {
+  height: 100px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.clock-objects {
+  background: #e32;
+  position: absolute;
+}
+.clock-seconds {
+  width: 45%;
+  height: 0.16em;
+  border-radius: 0.08em;
+}
+.clock-minutes {
+  width: 40%;
+  height: 0.24em;
+  border-radius: 0.12em;
+}
+.clock-hours {
+  width: 35%;
+  height: 0.36em;
+  border-radius: 0.24em;
+}
+.clock-pimpochka {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+}
